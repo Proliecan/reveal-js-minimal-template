@@ -14,3 +14,13 @@ const reset = '\x1b[0m';
 console.log("Hosting directory: ", dirname);
 console.log("Server running at", blue, "http://" + host + ":" + port, reset);
 console.log("Press Ctrl+C to stop server");
+
+
+// https://revealjs.com/installation/#installing-from-npm
+import Reveal from 'reveal.js';
+import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+
+let deck = new Reveal({
+   plugins: [ Markdown ]
+})
+deck.initialize();
